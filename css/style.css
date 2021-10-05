@@ -1,0 +1,124 @@
+body{
+	margin: 0;
+    padding: 0;
+	background:#111;
+	font-family: "system-ui";
+}
+
+.container{
+	margin: 15px;
+	padding: 50px;
+	display: block;
+	text-align: center;
+	border-radius: 14px;
+	background: #252525;
+	animation-duration: 5s;
+	animation-name: container_color;
+	animation-iteration-count:infinite;
+}
+
+.container2{
+	margin: 15px;
+	padding: 50px;
+	display: block;
+	text-align: center;
+	border-radius: 14px;
+	background: #252525;
+	animation-duration: 5s;
+	animation-name: container_color;
+	animation-iteration-count:infinite;
+}
+
+.content2{
+	height: 50px;
+	overflow: hidden;
+    list-style-type: none;
+}
+
+.content2 > li > a {
+	font-size: 24px;
+    padding: 14px;
+	display: block;
+	color: white;
+	text-align: center;
+	position: relative;
+    white-space: nowrap;
+	animation-name: move;
+	text-decoration: none;
+	animation-duration: 7s;
+	animation-iteration-count:infinite;
+	border-bottom: 3px solid #00ff15;
+	border-left: 3px solid #00ff15;
+	border-right: 3px solid #00ff15;
+}
+
+.content{
+	height: 50px;
+	overflow: hidden;
+    list-style-type: none;
+}
+
+.content > li > a {
+	font-size: 24px;
+    padding: 14px;
+	display: block;
+	color: white;
+	text-align: center;
+	position: relative;
+    white-space: nowrap;
+	animation-name: move;
+	text-decoration: none;
+	animation-duration: 7s;
+	animation-iteration-count:infinite;
+	border-bottom: 3px solid #00ff15;
+	border-left: 3px solid #00ff15;
+	border-right: 3px solid #00ff15;
+}
+
+@keyframes container_color {
+	0% {border: 3px solid #00ff15;}
+	100% {border: 3px solid #0059ff;}
+}
+
+@-webkit-keyframes container_color {
+	0% {border: 3px solid #00ff15;}
+	100% {border: 3px solid #0059ff;}
+}
+
+@keyframes move {
+	0% {top: 0px;}
+	20% {top: 0px;}
+	60% {top: -65px;}
+	100% {top: -139px;}
+}
+
+@-webkit-keyframes move {
+	0% {top: 0px;}
+	20% {top: 0px;}
+	60% {top: -65px;}
+	100% {top: -139px;}
+}
+
+@media screen and (max-width: 600px) {
+    .content > li > a {
+		font-size: 18px;
+		padding: 16px;
+    }
+	.content2 > li > a {
+		font-size: 18px;
+		padding: 16px;
+    }
+	@keyframes move {
+		0% {top: 0px;}
+		20% {top: 0px;}
+		60% {top: -65px;}
+		100% {top: -130px;}
+	}
+	
+	@-webkit-keyframes move {
+		0% {top: 0px;}
+		20% {top: 0px;}
+		60% {top: -65px;}
+		100% {top: -130px;}
+	}
+}
